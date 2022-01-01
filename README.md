@@ -2,7 +2,7 @@
 
 Build of watchtower with aws ecr helper included.
 Based on the directions here: https://containrrr.dev/watchtower/private-registries/#credential_helper
-but altered to build and be usable with manual setup on every system
+but altered to build and be usable with out manual setup on every system
 
 ${HOME}/.docker/config.json
 
