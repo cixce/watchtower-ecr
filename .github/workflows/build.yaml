@@ -1,0 +1,17 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron:  '0 0 * * 0'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v2 # Checking out the repo
+      - name: deploy
+        run: ./.github/workflows/build.sh ${{ secrets.BUILD_PAT }}
+        shell: bash
