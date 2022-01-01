@@ -3,7 +3,7 @@
 set -x
 DOCKER_TOKEN=$1
 
-DOCKER_IMAGE_NAME="watchtower-ecr"
+DOCKER_IMAGE_NAME=watchtower
 DOCKER_IMAGE_TAG=latest
 
 DOCKER_IMAGE_NAME=$(echo ghcr.io/${GITHUB_REPOSITORY}/${DOCKER_IMAGE_NAME} | tr '[:upper:]' '[:lower:]')
