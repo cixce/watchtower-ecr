@@ -13,10 +13,10 @@ ${HOME}/.docker/config.json
      "User-Agent" : "Docker-Client/19.03.1 (XXXXXX)"
    },
    "auths" : {
-     "<AWS_ACCOUNT_ID>.dkr.ecr.us-west-1.amazonaws.com" : {}
+     "<AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com" : {}
    },
    "credHelpers": {
-     "<AWS_ACCOUNT_ID>.dkr.ecr.us-west-1.amazonaws.com" : "ecr-login"
+     "<AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com" : "ecr-login"
    }
 }
 ```
